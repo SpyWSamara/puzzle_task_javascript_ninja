@@ -115,6 +115,7 @@ function solvePuzzle(pieces) {
 
   console.timeEnd('solvePuzzle');
 
+  // TODO: from time to time have wrong rows in resolve
   return result;
 }
 

@@ -66,7 +66,7 @@ function solvePuzzle(pieces) {
   };
 
   const buildTree = (leaf, list) => {
-    if (leaf.bottom) {
+    if (null !== leaf.bottom) {
       let bottom = list.filter(piece => {
         return piece.left === leaf.bottom || piece.top === leaf.bottom || piece.right === leaf.bottom || piece.bottom === leaf.bottom;
       }).pop();
@@ -78,7 +78,7 @@ function solvePuzzle(pieces) {
         delete(leaf.bottom);
       }
     }
-    if (leaf.right) {
+    if (null !== leaf.right) {
       let right = list.filter(piece => {
         return piece.left === leaf.right || piece.top === leaf.right || piece.right === leaf.right || piece.bottom === leaf.right;
       }).pop();

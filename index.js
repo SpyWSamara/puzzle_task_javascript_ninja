@@ -67,7 +67,7 @@ for (let i = 0; i < rows; i++) {
 document.querySelector(".solution").appendChild(fragment);
 
 async function loadPuzzle() {
-  return fetch("http://puzzle-task.t.javascript.ninja/pic").then((r) => r.json());
+  return fetch("https://puzzle-task.t.javascript.ninja/pic").then((r) => r.json());
 }
 
 loadPuzzle()
